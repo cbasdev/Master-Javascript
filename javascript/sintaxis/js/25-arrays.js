@@ -42,9 +42,32 @@ for (var i= 0; i < nombres2.length; i++){
 
 //Manera mas elegante y con jss
 
-nombres2.forEach((elemento, index, data)=>{
-	document.write("<li>"+ elemento+ "</li>");
+nombres2.forEach((elementos, index)=>{
+	document.write("<li>"+ index +"- "+elementos+ "</li>");
 });
+
+//For in
+for(let lenguaje in nombres2){
+	document.write("<li>"+ lenguaje+ "- "+nombres2[lenguaje]+ "</li>");
+
+}
 
 document.write("</ul>")
 
+//Busquedas en un array
+
+//Busca la cadena en el array
+var busqueda = nombres2.find(function(lenguaje){
+	return lenguaje == "CSS";
+});
+
+//El indice de la busqueda
+var busqueda2 = nombres2.findIndex(lenguaje => lenguaje == "Javascript<3");
+
+
+//hacer filtros
+
+var precios =[3123, 13, 123, 4123, 52];
+var busqueda3 = precios.some(precio => precio <=4);
+
+console.log(busqueda3);
