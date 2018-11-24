@@ -1,0 +1,13 @@
+/*
+Repaso pendiente:
+
+79-83 : Peticiones asíncronas (Fetch, Ajax) y promesas
+
+
+
+
+
+
+
+
+*/

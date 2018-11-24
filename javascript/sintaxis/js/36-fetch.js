@@ -2,20 +2,22 @@
 
 //fetch (ajax) peticiones a servicios / apis rest
 
-var usuarios = [];
 var div_usuarios = document.querySelector("#usuarios");
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://regres.in/api/users")
 	.then(data=> data.json()) //convertir un objeto a json
 	.then(users=> {
-		usuarios = users.data;
-		console.log(usuarios);
+		listadoUsuarios(users.data)
 
-
-		usuarios.map((user, i) =>{ //map no esta defiinido
-			let nombre = document.createElement("h2");
-
-			nombre.innerHTML = i + name;
-			div_usuarios.appendChild(nombre);
-		});
+		
 	});
 
+function listadoUsuarios(usuarios){
+	usuarios.map((user, i) =>{ //map no esta defiinido
+			let nombre = document.createElement("h3");
+
+			nombre.innerHTML = i + '. ' + user.first_name + " " + user.last_name;
+			div_usuarios.appendChild(nombre);
+
+			document.querySelector(".loading").style='none'; 
+		});
+}
