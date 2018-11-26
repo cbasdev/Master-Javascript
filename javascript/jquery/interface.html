@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Eventos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+
+
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/06-interface.js"></script>
+
+	<style type="text/css">
+		.elemento{
+			width: 300px;
+			height: 200px;
+			border: 5px solid black;
+			background: lightblue;
+			margin:20px;
+			float: left;
+		}
+		.lista-seleccionable li{
+			width: 80%;
+			padding: 20px;
+			border: 1px solid #ccc;
+			list-style: none;
+			cursor: pointer;
+		}
+		#elemento-movido{
+			width: 300px;
+			height: 300px;
+			border: 4px solid green;
+		}
+
+		#area{
+			width: 100px;
+			height: 100px;
+			border: 4px solid red;
+		}
+
+		.elemento{
+
+			background: lightpink;
+			float: none;
+			display: none;
+		}
+		ul .ui-selecting{background: yellow;}
+		ul .ui-selected{background: blue;}
+
+	</style>
+</head>
+<body>
+	<h1>Interfaz jQuery UI</h1>
+	<hr>
+	<h3>Pestañas</h3>
+
+	<div id="pestanas">
+		<ul>
+			<li><a href="#tabs-1">Pestaña 1</a></li>
+			<li><a href="#tabs-2">Pestaña 2</a></li>
+			<li><a href="#tabs-3">Pestaña 3</a></li>
+
+
+		</ul>
+		<div id="tabs-1">
+			Primera Pestaña
+		</div>
+		<div id="tabs-2">
+			SegundaPrimera Pestaña
+		</div>
+		<div id="tabs-3">
+			Tercera Pestaña
+		</div>
+	</div>
+	<hr/>
+	<hr>
+
+	<hr>
+	<h3>Calendario</h3>
+
+	<input type="text" id="calendario">
+	<hr/>
+	<hr>
+	<h3>Cuadros de dialogo</h3>
+
+	<div id="popup" title="¿Estas seguro?">
+		<p>
+			Contenido para mayores
+		</p>
+		
+	</div>	
+
+	<hr/>
+
+	<hr>
+	<h3>Tooltip</h3>
+
+	<a href="#" title="Acceder a la seccion de datos">Mis datos</a>
+
+	<hr/>
+	<button id="mostrar">Mostrar</button>
+
+
+	<div class="caja-efectos elemento"></div>
+
+
+	<div id="elemento-movido"></div>
+	<br>
+	<div id="area"></div>
+
+	<ul class="lista-seleccionable">
+		<li>Gta V</li>
+		<li>WOW</li>
+		<li>Need for speed</li>
+		<li>Call of dutty</li>
+
+
+	</ul>
+	<div class="elemento">
+		elemento de la web
+	</div>
+
+	<div class="elemento">
+		elemento de la web
+	</div>
+	<div class="elemento">
+		elemento de la web
+	</div>
+
+	</body>
+</html>

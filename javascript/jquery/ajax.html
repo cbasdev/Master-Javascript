@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Eventos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/05-ajax.js"></script>
+	<style type="text/css">
+		#datos{
+			border: 2px solid green;
+			width:250px;
+			height: 250px;
+			overflow: scroll;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>ajax</h1>
+	<form action="https://reqres.in/api/users" method="POST" id="formulario"> 
+		Nombre<input type="text" name="name">
+		Email<input type="text" name="email">
+		<input type="submit" value="registrar">
+	</form><br>
+	<div id="datos"></div>
+</body>
+</html>
