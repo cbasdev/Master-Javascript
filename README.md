@@ -10,4 +10,6 @@ Made by:
 
 ### Tecnology:
 
-__Typescript, Angular, jQuery, NodeJS__
+```
+Typescript, Angular, jQuery, NodeJS
+```
