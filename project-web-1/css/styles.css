@@ -67,3 +67,24 @@ body{
 	padding-right: 30px;
 }
 
+#post{
+	width: 60%;
+	float: left;
+	font-family: Helvetica, Arial;
+}
+
+.post h2{
+	font-size:30;
+	color:#333;
+}
+
+.post .date{
+	display: block;
+	color:gray;
+	margin-top: 5px;
+}
+.post p{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	line-height: 25px;
+}
