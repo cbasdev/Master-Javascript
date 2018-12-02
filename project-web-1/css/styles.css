@@ -8,10 +8,7 @@
 	float: none;
 	clear: both;
 }
-body{
-	background: url("../img/background.gif");
-	background-attachment: fixed;
-}
+
 
 #global{
 	width: 65%;
@@ -27,18 +24,17 @@ body{
 	font-size: 20px;
 	letter-spacing: 4px;
 	line-height: 45px;
-	background: black;
 	color: white;
 	text-align: center;
 	width: 385px;
 	height: 50px;
 	margin-bottom: 20px;
 	float: left;
+	border-radius: 20px;
 
 }
 #menu{
 	font-family: Helvetica, Arial;
-	background: #333;
 	width: 100%;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -55,9 +51,7 @@ body{
 	transition: all 300ms;
 }
 
-#menu ul li:hover{
-	background: black;
-}
+
 
 #menu a{
 	display: block;
@@ -98,11 +92,11 @@ body{
 	width: 65px;
 	display: block;
 	padding: 10px;
-	background: #333;
 	color:white;
 	text-decoration: none;
 	margin-top: 10px;
 	margin-bottom: 20px;
+	border-radius: 5px;
 }
 
 #sidebar{
@@ -118,7 +112,6 @@ body{
 	margin-bottom: 20px;
 	color:white;
 	text-align: center;
-	background: url(../img/background.gif);
 	margin: 1rem;
 	padding: 0rem;
 	border-radius: 30px;
@@ -130,4 +123,96 @@ body{
 #sidebar p{
 	font-size: 15px;
 	text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+	padding: 5px;
+	display: block;
+	border-radius: 2px;
+	border-color: #ccc;
+	border: 1px solid #ccc;
+	width: 80%;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+form input[type="submit"]{
+	font-size: 15px;
+	padding: 5px;
+	border: 1px solid gray;
+	font-family: Helvetica, Arial;
+	background: #333;
+	color:white;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+footer{
+	font-family: Helvetica,Arial;
+	color: white;
+	height: 47px;
+	background: rgba(51,51,51, 0.70);
+	margin: 0px auto;
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px; 
+	margin-top: 50px;
+	line-height: 47px;
+	border-radius: 3px;
+	text-align: right;
+}
+.bx-wrapper, .bx-viewport{
+	height: 250px !important;
+}
+.bxslider img{
+	display: block;
+	margin: auto;
+	height: 300px;
+}
+
+#selector-theme{
+	position: fixed;
+	top:50%;
+	background: rgba(51,51,51, 0.5);
+	width: 50px;
+	height: 100px;
+
+}
+
+#to-background,
+#to-backgroundsky{
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+	display: block;
+	margin:0px auto;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+#to-background{
+	background: gray;
+}
+#to-backgroundsky{
+	background: blue;
+}
+
+.subir{
+	color:white;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+
+#reloj{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Helvetica, Arial;
+	color:#333;
+	border: 5px solid #333;
+	display: block;
+	margin: 0px auto;
+	width: 20%
 }
