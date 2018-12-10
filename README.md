@@ -13,3 +13,6 @@ Made by:
 ```
 Typescript, Angular, jQuery, NodeJS
 ```
+
+
+Pending documentation
