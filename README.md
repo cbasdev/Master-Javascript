@@ -15,4 +15,4 @@ Typescript, Angular, jQuery, NodeJS
 ```
 
 
-Pending documentation
+Pending documentation...
