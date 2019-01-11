@@ -11,7 +11,7 @@ Made by:
 ### Tecnology:
 
 ```
-Typescript, Angular, jQuery, NodeJS
+Typescript, Angular, jQuery
 ```
 
 
